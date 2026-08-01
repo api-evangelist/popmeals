@@ -1,7 +1,24 @@
 aid: popmeals
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/popmeals.png
 name: Popmeals
-description: 'Popmeals is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Popmeals (Pop Meals, operated by Farm To Fork Sdn Bhd) is a Malaysian
+  food-delivery and cloud-kitchen brand offering popular meals at affordable prices
+  through a central-kitchen model and a network of outlets across Malaysia and Southeast
+  Asia. It was surfaced as a portfolio company of Partech and added to the API Evangelist
+  network. This is a consumer brand with a public ordering and support surface but
+  no published developer/API program: domain-security posture was probed live, and
+  no OpenAPI, SDK, MCP server, or developer portal was found.'
 url: https://raw.githubusercontent.com/api-evangelist/popmeals/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Food Delivery
+- Cloud Kitchen
+- Restaurants
+- Malaysia
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/popmeals-domain-security.yml
 - type: Website
   url: https://popmeals.com.my/
+- type: Support
+  url: https://help.popmeals.com.my/support/home
+- type: TermsOfService
+  url: https://order.popmeals.com.my/terms
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
